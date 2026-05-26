@@ -11,10 +11,24 @@ const REGULATORY_ORGS = [
     height: 36,
   },
     {
+    src: "/gordon.png",
+    alt: "Gambling Therapy",
+    href: "https://www.gamblingtherapy.org/",
+    width: 100,
+    height: 36,
+  },
+    {
     src: "/gamble-aware.png",
     alt: "BeGambleAware",
     href: "https://www.begambleaware.org/",
     width: 130,
+    height: 36,
+  },
+   {
+    src: "/Gambling_Commission_logo.png",
+    alt: "UK Gambling Commission",
+    href: "https://www.gamblingcommission.gov.uk/",
+    width: 120,
     height: 36,
   },
     {
@@ -24,20 +38,8 @@ const REGULATORY_ORGS = [
     width: 100,
     height: 36,
   },
-  {
-    src: "/gordon.png",
-    alt: "Gambling Therapy",
-    href: "https://www.gamblingtherapy.org/",
-    width: 100,
-    height: 36,
-  },
-  {
-    src: "/Gambling_Commission_logo.png",
-    alt: "UK Gambling Commission",
-    href: "https://www.gamblingcommission.gov.uk/",
-    width: 120,
-    height: 36,
-  },
+
+ 
 
 ]
 
