@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* British VIP Betting Sites — Light Pastel Sports Theme */
+    --background: 210 40% 98%;
+    --foreground: 220 30% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 12%;
+    --primary: 220 70% 34%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 30% 94%;
+    --secondary-foreground: 220 30% 18%;
+    --muted: 210 25% 95%;
+    --muted-foreground: 220 15% 46%;
+    --accent: 161 60% 38%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 220 70% 34%;
+    --radius: 0.375rem;
+
+    /* Custom palette tokens */
+    --navy: 220 70% 34%;
+    --navy-deep: 222 50% 18%;
+    --navy-light: 218 60% 48%;
+    --sky: 205 85% 90%;
+    --sky-mid: 205 70% 82%;
+    --mint: 161 60% 38%;
+    --mint-light: 161 50% 46%;
+    --mint-pale: 161 40% 92%;
+    --coral: 12 80% 58%;
+    --surface: 210 40% 98%;
+    --surface-raised: 0 0% 100%;
+    --surface-muted: 210 30% 94%;
+    --text-primary: 220 30% 12%;
+    --text-secondary: 220 15% 38%;
+    --text-muted: 220 12% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sport pitch subtle line pattern — light version */
+.sport-pattern {
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 80px,
+      hsl(var(--navy) / 0.03) 80px,
+      hsl(var(--navy) / 0.03) 81px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 80px,
+      hsl(var(--navy) / 0.025) 80px,
+      hsl(var(--navy) / 0.025) 81px
+    );
+}
+
+/* Card hover — subtle lift */
+.card-lift {
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-lift:hover {
+  box-shadow: 0 8px 32px hsl(var(--navy) / 0.10), 0 2px 8px hsl(var(--navy) / 0.06);
+  transform: translateY(-2px);
+  border-color: hsl(var(--navy) / 0.35);
+}
+
+/* Navy accent left border */
+.navy-left-accent {
+  border-left: 3px solid hsl(var(--navy));
+}
+
+/* Mint accent left border */
+.mint-left-accent {
+  border-left: 3px solid hsl(var(--mint));
+}
+
+/* Sport hero overlay — light with dark image readability */
+.sport-hero-overlay {
+  background: linear-gradient(
+    135deg,
+    hsl(222 55% 14% / 0.88) 0%,
+    hsl(220 45% 20% / 0.75) 50%,
+    hsl(220 40% 15% / 0.82) 100%
+  );
+}
+
+/* Section sport photo overlay for lighter feel */
+.sport-section-overlay {
+  background: linear-gradient(
+    180deg,
+    hsl(var(--navy) / 0.82) 0%,
+    hsl(var(--navy-deep) / 0.90) 100%
+  );
+}
+
+/* Score bar animation */
+@keyframes fill-bar {
+  from { width: 0; }
+  to { width: var(--bar-width); }
+}
+
+.score-bar-fill {
+  animation: fill-bar 1s ease-out forwards;
+}
+
+/* VIP shimmer text */
+@keyframes shimmer-blue {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.vip-shimmer {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--navy)) 0%,
+    hsl(218 80% 62%) 40%,
+    hsl(var(--navy)) 60%,
+    hsl(220 55% 28%) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer-blue 4s linear infinite;
+}
+
+/* Divider rule */
+.section-rule {
+  border-top: 2px solid hsl(var(--navy));
+}
+
+.section-rule-thin {
+  border-top: 1px solid hsl(var(--border));
+}
+
+/* Sharp border utility */
+.sharp-border {
+  border: 1px solid hsl(var(--border));
+  border-radius: 0;
+}
+
+/* Glass light panel */
+.glass-light {
+  background: hsl(0 0% 100% / 0.92);
+  backdrop-filter: blur(16px);
+  border: 1px solid hsl(var(--border));
+}
