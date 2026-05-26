@@ -2,18 +2,26 @@ import Link from "next/link"
 import { ShieldCheck } from "lucide-react"
 
 const REGULATORY_ORGS = [
+
   {
+    src: "/gamcare.png",
+    alt: "GamCare",
+    href: "https://www.gamcare.org.uk/",
+    width: 110,
+    height: 36,
+  },
+    {
     src: "/gamble-aware.png",
     alt: "BeGambleAware",
     href: "https://www.begambleaware.org/",
     width: 130,
     height: 36,
   },
-  {
-    src: "/gamcare.png",
-    alt: "GamCare",
-    href: "https://www.gamcare.org.uk/",
-    width: 110,
+    {
+    src: "/gamstop.svg",
+    alt: "GamStop",
+    href: "https://www.gamstop.co.uk/",
+    width: 100,
     height: 36,
   },
   {
@@ -30,13 +38,7 @@ const REGULATORY_ORGS = [
     width: 120,
     height: 36,
   },
-  {
-    src: "/gamstop.svg",
-    alt: "GamStop",
-    href: "https://www.gamstop.co.uk/",
-    width: 100,
-    height: 36,
-  },
+
 ]
 
 const NAV_LINKS = [
@@ -138,7 +140,6 @@ export function Footer() {
                 aria-label={alt}
                 className="transition-opacity hover:opacity-80 overflow-hidden"
                 style={{
-                  background: "#ffffff",
                   padding: "6px 14px",
                   borderRadius: "var(--radius)",
                 }}
