@@ -22,7 +22,7 @@ const _dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "British VIP Betting Sites — Top UK Bookmakers 2026",
+  title: "British VIP Betting Sites  Top United Kingdom Bookmakers 2026",
   description:
     "British VIP Betting Sites ranks the UK's finest UKGC-licensed bookmakers. Independent expert reviews covering odds quality, welcome bonuses, payout speed, and responsible gambling tools. Updated monthly at britishvipbettingsites.com.",
   keywords:
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   referrer: "strict-origin-when-cross-origin",
   authors: [{ name: "British VIP Betting Sites Editorial Team" }],
   openGraph: {
-    title: "British VIP Betting Sites — Top UK Bookmakers 2026",
+    title: "British VIP Betting Sites Top United Kingdom Bookmakers 2026",
     description:
       "Independent expert rankings of the best UK betting sites. UKGC-licensed only. Reviewed for odds, bonuses, safety, and payouts. Updated monthly.",
     url: "https://britishvipbettingsites.com",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "British VIP Betting Sites — Top UK Bookmakers 2026",
+    title: "British VIP Betting Sites Top United Kingdom Bookmakers 2026",
     description:
       "The UK's most trusted comparison of UKGC-licensed bookmakers. Expert-reviewed, unbiased, updated monthly.",
   },

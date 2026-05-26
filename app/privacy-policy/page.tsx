@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
       <Header />
       <PageLayout
         title="Privacy Policy"
-        subtitle="Last updated: May 2026 — britishvipbettingsites.com"
+        subtitle="Last updated: May 2026 - britishvipbettingsites.com"
       >
 
         <ContentBlock title="Introduction">
